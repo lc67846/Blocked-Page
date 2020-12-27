@@ -1,0 +1,476 @@
+
+
+
+<style type="text/css">
+
+    body {
+        visibility: visible !important;
+
+    }
+
+    #inline {
+        color: #55b2e3 !important;
+        border-bottom: none !important;
+    }
+    #inline span.view-details {
+        text-decoration: underline !important;
+    }
+
+
+    .blocked-logo {
+        width: 120px !important;
+    }
+
+    .school-logo {
+        height: auto;
+    }
+
+    .school-logo img {
+        margin: 10px;
+        max-height: 110px;
+    }
+
+    /*DETAILS STYLE*/
+    #inline_content {
+        width: 400px;
+        padding: 30px 0px;
+        margin: 0px auto;
+        background: #fff;
+        text-align: left;
+        border-radius: 10px;
+    }
+
+    .block-details {
+        margin-top: 0px;
+        color: #f1746e;
+        text-align: center;
+        width: 100%;
+    }
+
+    .evt_row {
+        border-top: 1px #ebebeb solid;
+        height: 40px;
+        line-height: 35px;
+    }
+
+    .evt_lc {
+        margin-left: 60px !important;
+        font-weight: normal !important;
+    }
+
+    .evt_rc {
+        font-weight: bold !important;
+        display: initial !important;
+    }
+
+    .blockpage_section {
+        margin: auto
+    }
+
+    .evt_rc.url {
+        margin-top: 10px;
+        height: 25px;
+        width: 160px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: inline-block !important;
+        white-space: nowrap;
+    }
+
+    .close-btn-holder {
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    .close-btn {
+        color: #fff;
+        background: #f1746e;
+        border: none;
+    }
+
+    .button.mfp-close {
+        overflow: visible;
+        cursor: pointer;
+        margin: 10px auto !important;
+        background: #f1746e !important;
+        border: 0;
+        -webkit-appearance: none;
+        display: block !important;
+        outline: none;
+        padding: 0;
+        z-index: 1046;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    button::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+
+    .mfp-close {
+        width: 100px;
+        height: auto;
+        line-height: 30px;
+        position: relative !important;
+        text-decoration: none;
+        text-align: center;
+        opacity: 1 !important;
+        padding: 0px !important;
+        border-radius: 5px !important;
+        color: white;
+        font-style: normal !important;
+        font-weight: normal !important;
+        font-size: 16px !important;
+        font-family: inherit;
+    }
+
+    .mfp-close:hover, .mfp-close:focus {
+        opacity: 1;
+    }
+
+    .mfp-close:active {
+        top: 1px;
+    }
+
+    .evt_row {
+        width: auto;
+    }
+
+    .evt_lc {
+        width: 100px;
+        display: inline-block;
+        font-weight: bold;
+        color: #333;
+        margin: 5px 0 5px 0;
+    }
+
+    .evt_rc {
+        width: 600px;
+        display: inline-block;
+    }
+
+    #inline-content, #inline-close {
+        display: none
+    }
+
+    #inline-content {
+        display: block;
+        position: absolute;
+        top: calc(50% + 90px);
+        left: 10%;
+    }
+
+    #inline-content.fullscreen {
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    #inline-close {
+        font-size: 14px;
+        color: #fff
+    }
+
+    .details {
+        font-size: 14px;
+        display: none;
+        line-height: 22px
+    }
+
+    .details span {
+        word-break: break-all
+    }
+
+    .details span:nth-child(2) {
+        font-weight:bold;
+    }
+
+    /*QADUX-116*/
+    .partner-logo {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .bottom-logo {
+        position: absolute;
+        left: unset !important;
+        bottom: unset !important;
+        margin-left: 0px !important;
+        max-width: 116px ;
+        right: 35px !important;
+        top: 35px !important;
+    }
+</style>
+<!-- REL-2408 - Google Tag Manager -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31418916-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-31418916-2');
+</script>
+
+<script type="text/javascript" language="javascript" src="/js/vendor/jquery-1.11.0.min.js"></script>
+<link rel="stylesheet" href="/css/colorbox.css"/>
+<link rel="stylesheet" href="/css/main.css"/>
+<link rel="stylesheet" href="app/css/login-layouts.css">
+
+<!--BEGIN BLOCKED TEMPLATE-->
+<div class="blocked-page businessbg">
+    <div id="mailSuccess" class="mail-success" style="display:none"></div>
+    <img src="/assets/img/logo.svg" class="blocked-logo hidden-xs"/>
+
+    
+    <!--GEO LOCATION BLOCKED-->
+    
+    <!-- ==========================================================================
+            Blocked kids full page - html starts
+    ========================================================================== -->
+    <!--IF CONTACT ADMIN TWL AND LOGIN ARE OFF-->
+        <div class="row full-blocked-page">
+        <!-- <div class="col-sm-12 left-bg-img center-text block-bg"> -->
+        <div class="col-sm-12 left-bg-img center-text block-bg">
+        <!-- QADUX-116 -->
+                    <a href="/">
+                <img src="app/images/logo.svg" alt="Securly" title="Securly" class="logo">
+            </a>
+                            <img  src="/schoollogos/fortsmithschools.org_logo.png" alt="School Logo" class="bottom-logo">
+        
+        <section id="blockMessage">
+            <h1>Looks like this page isn't allowed</h1>
+            <p>You're not able to see this site because it goes against your school's online rules.</p>
+            <!-- QADUX-117 -->
+            <p>This page has been blocked.            <div class="clearfix"></div>
+                            <a href="#" id="inline">
+                    <span class="view-details">View details</span>
+                    <span id="navigation-button" class="ss-navigatedown"></span>
+                </a>
+                        </p>
+        </section>
+
+        <div id="inline-content" class="fullscreen">
+            <div class="details">
+                <span>Policy: </span><span>Student Policy</span>
+            </div>
+            <div class="details"><span>Category: </span><span>Other Adult Content, Games</span></div>
+            <div class="details"><span>Keyword: </span><span></span>
+            </div>
+            <div class="details"><span>Reason: </span><span>site</span></div>
+            <div class="details"><span>URL: </span><span>www.dosgames.com/</span>
+            </div>
+        </div>
+
+        <!-- QADUX-116 -->
+            </div>
+</div>
+
+
+    </div>
+<script>
+    /* showTWL : Used for contact admin field validation purpose */
+    var showTWL =  0;
+
+    $(document).ready(function () {
+        var registeredDomains  = ["fortsmithschools.org"];
+        var otherText = "Other";
+        if(registeredDomains){
+            for (var i = 0; i < registeredDomains.length; i++) {
+                registeredDomains[i] = registeredDomains[i].toLowerCase();
+            }
+        }
+        var EMAIL_REGEXP = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        var detailsOpen = false;
+        var blockMessageHeight = $('#blockMessage').height();
+        var bodyHeight = $('body').height();
+        if (bodyHeight < 1000) {
+            console.log('short')
+            $('#blockMessage').css('margin-top', '-74px')
+        } else {
+            console.log('tall');
+        }
+
+        $('#inline').on('click', function () {
+            if (detailsOpen == false) {
+                setInlineContentPosition();
+                $('#inline-content').css('display', 'block');
+                $('.details').css('display', 'block');
+                $('#inline-close').css('display', 'inline-block');
+                $("#navigation-button").addClass("ss-navigateup");
+                $("#navigation-button").removeClass("ss-navigatedown");
+                detailsOpen = true;
+            } else {
+                $('#inline-content').css('display', 'none');
+                $('.details').css('display', 'none');
+                $('#inline-close').css('display', 'none');
+                $("#navigation-button").removeClass("ss-navigateup");
+                $("#navigation-button").addClass("ss-navigatedown");
+                detailsOpen = false;
+            }
+
+        });
+
+        /* REL-2199: Conact Admin Form Changes*/
+
+        $('.askForPermissionClk').click(function(){
+            $("#askForPermission").hide();
+            $("#askForPermissionLink").hide();
+            $("#permissionForm").show();
+            $('#' + param).hide();
+            $(".btn-google").hide();
+            $(".azure-button").hide();
+        });
+        // If 'other' option selected show textbox, else remove hide textbox'
+        function updateReasonTextBox() {
+            var questionSelectionValue = document.getElementById("questionSelection").value;
+            var otherReasonElement =  document.getElementById("otherReasonInfo");
+            if(questionSelectionValue == otherText){
+                otherReasonElement.style.display= "block";
+            } else {
+                otherReasonElement.value = "";
+                otherReasonElement.style.display= "none";
+            }
+        }
+        /** Contact Admin Form Validation
+         */
+        $('#teacherEmail').on('blur', function(){
+            var inputEmail = $('#teacherEmail').val();
+            var domain = inputEmail.substring(inputEmail.lastIndexOf("@") + 1);
+            if(EMAIL_REGEXP.test(inputEmail) && registeredDomains.indexOf(domain.toLowerCase()) == -1) {
+                $("#domainError").show();
+                $("#sendEmail").attr("disabled", true);
+            }
+        });
+
+        var otherReasonInfo = document.getElementById("otherReasonInfo");
+        otherReasonInfo && otherReasonInfo.addEventListener("input",function(){
+            formValidate();
+        });
+
+        var teacherEmail = document.getElementById("teacherEmail");
+        teacherEmail && teacherEmail.addEventListener("input",function(){
+            formValidate();
+        });
+
+        var reasonSelection = document.getElementById("questionSelection");
+            reasonSelection && reasonSelection.addEventListener("change", function(){
+            updateReasonTextBox();
+            formValidate();    
+            // Calling updateReasonTextBox function again for mac/ios related device
+            // as weird issue coming, need to find some concrete solution for it
+            // for now will keep this way
+            if(/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)){
+                updateReasonTextBox();
+            }
+        });
+
+        function formValidate(){
+            var disabled = false;
+            // EMAIL VALIDATION
+            if (showTWL) {
+                $("#domainError").hide();
+                var inputEmail = teacherEmail.value;
+                if (EMAIL_REGEXP.test(inputEmail)) {
+                    disabled = false;
+                    var domain = inputEmail.substring(inputEmail.lastIndexOf("@") + 1);
+                    if(registeredDomains.indexOf(domain.toLowerCase()) == -1) {
+                        disabled = true;
+                    }
+                } else {
+                    disabled = true;
+                }
+            }
+
+            // REASON SELECTION DROPDOWN VALIDATION
+            var selectedReason = $('#questionSelection')[0].value;
+            if (!showTWL && selectedReason != '') {
+                if (selectedReason == otherText) {
+                    var otherReasonValue = otherReasonInfo.value;
+                    if (otherReasonValue && otherReasonValue != '' && otherReasonValue.length <= 500) {
+                        disabled = false;
+                    } else {
+                        disabled = true;
+                    }
+                } else {
+                    disabled = false;
+                }
+            } else if (!showTWL && selectedReason == '') {
+                disabled = true;
+            }
+
+            if (disabled) {
+                $("#sendEmail").attr("disabled", true);
+            } else {
+                $("#sendEmail").removeAttr("disabled");
+            }
+        }
+
+        $('#sendEmail').click(function(ev){
+            // Disabled send button once clicked.
+            $("#sendEmail").attr("disabled", true);
+            var params={};
+            params['site']= $('#permissionSite').val();
+            params['teacherEmail']= $('#teacherEmail').val();
+            params['reason']= $('#questionSelection').val();
+            params['otherReason']= $('#otherReasonInfo').val();
+            params['categories'] = "Other Adult Content, Games";
+            params['keyword'] = "";
+            params['blockedReason'] = "site";
+            params['policy'] = "Student Policy";
+            params['requesterOU'] = "fortsmithschoolsorgStudentsofCarnallElementarySchool";
+            params['requester'] = "lc67846@fortsmithschools.org";
+            params['fid'] = "vgregory@fortsmithschools.org";
+            params['i2n'] = "";
+            sendEmail(params);
+            ev.preventDefault();
+        });
+        $(window).resize(setInlineContentPosition);
+    });
+
+    function setInlineContentPosition() {
+        var bmt = $('#blockMessage').position().top + $('#blockMessage').height();
+        bmt += parseFloat($('#blockMessage').css('margin-top'));
+        $('#inline-content').css('top', bmt);
+    }
+
+    function sendEmail(obj){
+        $.post( "app/api/sendtwl",obj)
+            .done(function( data ) {
+                window.scroll(0,0);
+                resetFormDetails();
+                $("#mailSuccess").text(data.message);
+                $("#mailSuccess").show();
+                setTimeout(function(){
+                    $("#mailSuccess").hide();
+                }, 5000);
+            })
+            .fail(function(error){
+                window.scroll(0,0);
+                resetFormDetails();
+                $("#mailSuccess").text(error.message);
+                $("#mailSuccess").show();
+                $("#mailSuccess").css('background','#fd9292');
+                setTimeout(function(){
+                    $("#mailSuccess").hide();
+                    $("#mailSuccess").css('background','#28d9c3');
+                }, 5000);
+            });
+    }
+
+    function resetFormDetails(){
+        $("#contactAdminForm")[0].reset();
+        $("#sendEmail").attr("disabled", true);
+        $('#otherReasonInfo').hide();
+    }
+</script>
+
+
+
+</div>
+<!--END BLOCKED TEMPLATE-->
+<!--DETAILS SECTION-->
